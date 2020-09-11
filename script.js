@@ -58,10 +58,11 @@ window.addEventListener('load', ()=> {
                 temperature_degree.textContent = temperature;
                 temperature_description.textContent = summary;
                 locationtimezone.textContent = data.timezone;
+
+                //icon call 
+
+                setIcons(icon , document.querySelector(".icon"));
                 
-               
-                
-            
                 
 
             });
@@ -70,11 +71,24 @@ window.addEventListener('load', ()=> {
 
     });
 
-}
-     
- 
 
-});
+   
+ }
 
+
+
+  });
+
+
+
+  
+//  // icon here
+
+//  function setIcons(icon, iconID){
+//     const skycons = new Skycons({ color: "white" });
+//     const currentIcon = icon.replace(/-/g, "_").toUpperCase();
+//     skycons.play();
+//     return skycons.set(iconID, Skycons[currentIcon]);
+// }
 
  
